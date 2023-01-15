@@ -17,7 +17,7 @@ const synonyms = Object.keys(synonymsidentifier);
 
 export default function App() {
   const [synonym, setSynonym] = useState("");
-  const [meaning, setMeaning] = useState("translation will appear here..");
+  const [meaning, setMeaning] = useState("translation will appear here.......");
 
   function changeHandler(event) {
     const inputSynonym = event.target.value;
@@ -40,7 +40,7 @@ export default function App() {
       <input
         onChange={changeHandler}
         value={synonym}
-        placeholder={"Search your special character"}
+        placeholder={"search synonyms"}
         style={{
           padding: "1em",
           minWidth: "80%"
